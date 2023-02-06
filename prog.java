@@ -3,10 +3,12 @@ public class prog {
         Person dad = new Person("Alex");
         Person son = new Person("Leon");
         Person daugter = new Person("Emma");
-        Person graddaughter = new Person("Molly");
+        Person granddaughter = new Person("Molly");
+        Person grandson = new Person("Alexander");
         dad.AddName(son);
         dad.AddName(daugter);
-        daugter.AddName(graddaughter);
+        son.AddName(grandson);
+        daugter.AddName(granddaughter);
         view.treeView(dad, 1);
     }
 }
